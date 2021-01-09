@@ -1,0 +1,12 @@
+<% if ((typeof res.locals.err != 'undefined' && typeof res.locals.err != 'object') || res.locals.err != null) { %>
+    <%# We must ensure that the locals are strings and not anything else. If the err object is set to null, it is sometimes typecasted from null to an empty Object %>
+    <div class="alert alert-danger err-message">
+        <h2>An Error Occured</h2>
+        <p><%= err %></p>
+    </div>
+<% } else if ((typeof res.locals.success != 'undefined' && typeof res.locals.success != 'object') || res.locals.success != null)  { %> 
+    <div class="alert alert-success success-message">
+        <h2>Success!</h2>
+        <p><%= success %></p>
+    </div>
+<% } %> 

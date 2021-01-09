@@ -1,0 +1,82 @@
+.navigation {
+  padding: 10px;
+  display: flex;
+  height: 30vh;
+}
+
+.div-logo {
+  flex-grow: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation-buttons {
+  flex-grow: 3;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation-buttons div {
+  height: auto;
+}
+
+.navigation-buttons i {
+  display: block;
+  font-size: 40px;
+}
+
+.navigation .navigation-button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.account-info {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.account-info h2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.account-info .username-display {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.account-info span {
+  text-align: center;
+}
+
+.account-info .btn {
+  margin: 10px;
+}
+
+.content {
+  height: 70vh;
+  background-color: var(--blue);
+  padding: 30px;
+}
+
+.content h1 {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+
+.card.signup input {
+  margin: 10px 0;
+}
+
+.content .left-col p {
+  text-align: center;
+  color: white;
+}
+

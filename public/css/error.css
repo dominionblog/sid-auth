@@ -1,0 +1,9 @@
+.container.err-container {
+  background-color: var(--danger);
+}
+
+.err-container p {
+  text-align: center;
+  color: white;
+}
+

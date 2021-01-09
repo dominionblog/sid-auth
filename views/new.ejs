@@ -1,0 +1,10 @@
+<%- include("./partials/header.ejs", {res}) %> 
+    <div class="container newform">
+        <%- include("./partials/status-messages.ejs", {res}) %> 
+        <h1>Create a New Snippet</h1>
+        <form action="/snippets/new" method="POST">
+            <textarea name="content" class="form-control form-control-lg" placeholder="Type whatever is on your mind..."></textarea>
+            <button class="btn btn-primary" type="submit">Create</button>
+        </form>
+    </div>
+<%- include("./partials/footer.ejs", {res}) %> 

@@ -1,0 +1,39 @@
+<%- include("./partials/header.ejs", {res}) %>
+<div class="content">
+    <div class="container">
+        <div class="row">
+            <div class="left-col col">
+                <h1>Welcome to Snippets</h1>
+                <p>Your one-stop-shop for everything creative</p>
+            </div>
+            <div class="col-md-5">
+                <div class="card signup">
+                    <div class="card-body">
+                        <h4 class="card-title">Sign up now!</h4>
+                        <h6 class="text-muted card-subtitle mb-2">It's always better with an account!</h6>
+                        <%- include("./partials/status-messages.ejs", {res}) %> 
+                        <form method="POST" action="/auth/register">
+                            <input name="username" class="form-control" type="text" placeholder="Username">
+                            <input name="password" class="form-control" type="password" placeholder="Password">
+                            <input class="btn btn-primary" type="submit" value="Create Account" />
+                        </form>
+                        <div role="alert" class="alert alert-info m-2">
+                            <h2>Requirements</h2>
+                            <h3>Username</h3>
+                            <ul>
+                                <li>Be less than 20 characters</li>
+                                <li>Not be blank</li>
+                                <li>Be unique</li>
+                            </ul>
+                            <h3>Password</h3>
+                            <ul>
+                                <li>Not be blank</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include ("./partials/footer.ejs") %>

@@ -1,0 +1,19 @@
+.container.newform {
+  background-color: var(--info);
+}
+
+.newform .btn {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.newform textarea {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  resize: none;
+}
+

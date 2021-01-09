@@ -1,0 +1,20 @@
+.card.bg-primary.text-light.signin-card input {
+  margin: 10px 0;
+}
+
+.card.bg-primary.text-light.signin-card a {
+  color: var(--teal);
+}
+
+.signin-btn {
+  width: 100%;
+}
+
+.col.signin-view h1 {
+  text-align: center;
+}
+
+.col.signin-view p {
+  text-align: center;
+}
+

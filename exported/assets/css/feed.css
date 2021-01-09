@@ -1,0 +1,8 @@
+.myfeed {
+  background-color: var(--blue);
+}
+
+.myfeed .card {
+  margin: 10px;
+}
+

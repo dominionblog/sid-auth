@@ -1,0 +1,14 @@
+.myfeed {
+  background-color: var(--blue);
+}
+
+.myfeed .card {
+  margin: 10px;
+}
+
+.no-results {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+}
+

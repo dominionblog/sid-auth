@@ -1,0 +1,19 @@
+<%- include("./partials/header.ejs", {res}) %> 
+    <div class="container myfeed">
+        <h1>My Feed</h1>
+        <% if (res.locals.snippets.length > 0) { %>
+            <div class="feed-cards">
+            <% for (let i = 0; i < res.locals.snippets.length; i++) { %>
+                <div class="card snippet">
+                    <div class="card-body">
+                        <p class="card-text"><%= res.locals.snippets[i].content %></p>
+                        <span class="text-muted card-subtitle mb-2">Created on <span class="date"><%= res.locals.snippets[i].createdAt %></span> by <span class="author"><%= res.locals.snippets[i].author.username %></span></span>
+                    </div>
+                </div>
+            <% } %>
+            </div>
+        <% } else { %>
+            <h2 class="no-results"><i class="fa fa-close m-2"></i>No Results</h2>
+        <% } %>
+    </div>
+<%- include("./partials/footer.ejs") %> 

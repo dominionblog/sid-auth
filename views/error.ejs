@@ -1,0 +1,6 @@
+<%- include("./partials/header", {res}) %> 
+    <div class="container err-container">
+        <h1>An Error Occured</h1>
+        <p>(code: <%= res.locals.errCode %>)</p>
+    </div>
+<%- include("./partials/footer", {res}) %> 
